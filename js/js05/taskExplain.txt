@@ -1,0 +1,17 @@
+Task 1:
+When clicked with the mouse, the background color changes to yellow, and the font becomes bold.
+
+Task 2:
+When selecting a specific country name from the menu(drop down list), the image should change to the flag of that country.
+
+Task 3:
+Enter a password and re-enter the same password. If the number of characters is less than six, a message should appear on the screen stating that the password is short. If the password does not match the re-entered password, a message should appear on the screen stating that the passwords do not match.
+
+Task 4:
+Clicking on the "Show" word should display the question and the paragraph written inside the box. Clicking on the "Hide" button should hide the paragraph and the box.
+
+Task 5:
+Enter textual content into the box and control some of its properties, such as font size, type, and placing a line under the entered text, and so on....
+
+Task 6:
+The color of the box should change to several colors without using animation.

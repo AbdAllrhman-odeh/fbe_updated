@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="task2Css.css">
+</head>
+<body>
+    <!-- <img src="linkedIn.png" alt="linkedIn logo" class="logo"> -->
+    <div class="container">
+        <h1 style="text-align: center;">
+            sign in_session
+        </h1>
+        <p>
+            stay updated on your professional world
+        </p>
+        <form action="">
+            <div class="input">
+                <input type="email" placeholder="Email or Phone">
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Password">
+            </div>
+            <a href="">Forgot Password?</a><br><br>
+            <button type="button" class="signIn">Sign in</button><hr>
+            <button type="button" class="signInApple"><img src="apple.png" alt="apple logo" style="width:20px; height:20px;" onclick="onclick_function()">Sing in with apple</button>
+        </form>
+    </div>
+    <div id="data"></div>
+</body>
+<script>
+    var load=addEventListener('load',function(){
+        var subject,description,userTypes,technologyUsed;
+        subject="CSS Tasks";
+        description="design a sign in form";
+        userTypes="anyone that use the website";
+        technologyUsed="just html and css";
+        window.sessionStorage.setItem('Subject',subject);
+        window.sessionStorage.setItem('Description',description);
+        window.sessionStorage.setItem('UserTypes',userTypes);
+        window.sessionStorage.setItem('TechnologyUsed',technologyUsed);
+        showData();
+
+    });
+    function showData()
+    {
+        var data=document.getElementById('data');
+        subject=window.sessionStorage.getItem('Subject');
+        description=window.sessionStorage.getItem('Description');
+        userTypes=window.sessionStorage.getItem('UserTypes');
+        technologyUsed=window.sessionStorage.getItem('TechnologyUsed');
+        data.innerHTML=`Subject: ${subject}<br>Description:${description}<br>User Types:${userTypes}<br>Techonlogy Used:${technologyUsed}`;
+    }
+</script>
+</html>

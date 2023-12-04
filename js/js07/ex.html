@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+</head>
+<body>
+    <script>
+        let str="os1 os1Ss os8 oS8os";
+
+        let regExp=/os[5-9]os/gi;
+        console.log(str.match(regExp));
+        console.log(regExp.test(str));
+
+        str="AaBbCc12!@#vvv%^bc";
+
+        regExp=/[a-z]/g; //all small letter chars
+        console.log(str.match(regExp));
+
+
+        regExp=/[A-Z]/g; //first match.. capital letter chars
+        console.log(regExp.exec(str));
+
+//        let str = "AaBbCc12!@#vvv%^bc";
+// let regExp = /[A-Z]/g; // All capital letter chars
+// let result;
+// while ((result = regExp.exec(str)) !== null) {
+//   console.log(result);
+// }
+    regExp=/[^a-zA-Z0-9]/g;//all special chars
+    console.log(str.match(regExp));
+
+    let regx=new RegExp('c','gi');
+    console.log(regx.test(str));
+
+    regx=new RegExp('[a-z]','g');
+    console.log(regx.test(str));
+
+
+    </script>
+</body>
+</html>
